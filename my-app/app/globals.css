@@ -1,8 +1,53 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #0f0f0f;
+  color: white;
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+.sacramento-heading {
+  font-family: var(--font-sacramento);
+  font-size: 2.5rem; /* Example styling */
+  color: #ff69b4; /* Example color */
+}
+.circular-gallery-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+@media (max-width: 768px) {
+  .circular-gallery-container {
+    width: 100vw;
+    height: 100svh;
+    min-height: 100svh;
+  }
+}
+
+/* You can also create a utility class if you prefer */
+.font-sacramento {
+  font-family: var(--font-sacramento);
+}
+.grenze-heading {
+  font-family: var(--font-grenze);
+  font-size: 2.5rem; /* Example styling */
+  color: #ff69b4; /* Example color */
+}
+
+/* You can also create a utility class if you prefer */
+.font-grenze {
+  font-family: var(--font-grenze);
 }
 
 @theme inline {
