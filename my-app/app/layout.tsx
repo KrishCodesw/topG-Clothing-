@@ -37,48 +37,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DitchCo",
-  description:
-    "TopG Clothing blends premium craftsmanship with bold streetwear aesthetics. Shop high-end fashion for men and women – hoodies, jackets, tees, and more. Elevate your wardrobe with limited edition drops.",
-  keywords: [
-    "luxury streetwear",
-    "designer streetwear",
-    "TopG Clothing",
-    "high-end fashion brand",
-    "premium clothing for men",
-    "luxury fashion India",
-    "minimalist street style",
-    "urban fashion 2025",
-  ],
-  metadataBase: new URL("https://topg-clothing.vercel.app"), // Change to your domain
-  authors: [{ name: "Krish Jain", url: "https://github.com/KrishCodesw" }],
-  creator: "TopG Clothing Team",
-  publisher: "TopG Studios",
+  title: "DitchCo", // <- change this
+  description: "Your site’s description for SEO", // <- make this keyword-rich
+  keywords: ["fashion", "luxury", "designer wear", "modern clothing"], // optional
+  icons: {
+    icon: "/logo.jpg", // if PNG: use /favicon.png
+  },
   openGraph: {
-    title: "TopG Clothing | Limited Edition Luxury Streetwear",
-    description:
-      "Stand out with statement streetwear pieces crafted from premium materials. Explore TopG’s exclusive collections before they sell out.",
-    url: "https://topg-clothing.vercel.app",
-    siteName: "TopG Clothing",
-    images: [
-      {
-        url: "/og-image.png", // Replace with real image
-        width: 1200,
-        height: 630,
-        alt: "TopG Clothing OG Banner",
-      },
-    ],
-    type: "website",
+    title: "DitchCo",
+    description: "Your premium clothing collection, crafted with elegance.",
+    images: ["/opengraph-image.png"], // optional OG image
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "TopG Clothing | Limited Edition Streetwear for Icons",
-    description:
-      "Redefining Indian luxury fashion. Discover premium urban outfits with bold style and minimal aesthetic.",
-    creator: "@topgwear", // Change to your real handle
-    images: ["/og-image.png"],
-  },
-  category: "fashion",
 };
 
 export default function RootLayout({
