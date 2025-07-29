@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <motion.h1
-          className="text-3xl sm:text-5xl p-2 font-bold font-sacramento tracking-wider"
+          className="text-3xl shadow-amber-300 sm:text-5xl p-2 font-bold font-sacramento tracking-wider"
           initial={{ opacity: 0, x: -25 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: [0.25, 1, 0.5, 1] }}
@@ -39,7 +39,7 @@ const Navbar = () => {
 
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="transition-transform duration-300 font-grenze hover:scale-105 hover:text-white text-sm sm:text-xl"
+              className="transition-transform duration-300 boogaloo-regular hover:scale-105 hover:text-white text-sm sm:text-xl"
             >
               {link}
             </motion.a>

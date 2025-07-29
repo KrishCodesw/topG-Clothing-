@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Amarante, Sacramento, Grenze } from "next/font/google";
+import { Amarante, Sacramento, Grenze, Boogaloo } from "next/font/google";
 
 import "./globals.css";
 
@@ -8,10 +8,17 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
 const amarante = Amarante({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-amarante",
+});
+
+const boogaloo = Boogaloo({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-boogaloo",
 });
 const sacramento = Sacramento({
   weight: "400", // Sacramento only has a 400 weight
