@@ -28,7 +28,7 @@ export default function Hero() {
       />
       <motion.div className="text-white text-center text-3xl md:text-5xl font-semibold">
         <SplitText
-          text="Swipe Right to have a perfect match for your clothes !"
+          text="Swipe Right to have a match for your clothes!"
           className="text-2xl font-semibold text-center"
           delay={100}
           duration={1}
